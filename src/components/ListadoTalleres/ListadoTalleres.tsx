@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './.css';
+import './ListadoTalleres.css';
 type Props = {}
 
 type State = {}
