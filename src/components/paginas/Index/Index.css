@@ -1,4 +1,13 @@
-.App {
-  text-align: center;
-  color: red;
+.contenido {
+  display: flex;
+}
+
+
+.contenido .izquierda {
+  background: #369;
+}
+
+
+.contenido .derecha {
+  background: #ffff00;
 }
