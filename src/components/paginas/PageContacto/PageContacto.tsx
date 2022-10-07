@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../componentes/Footer/Footer';
 import Header from '../../componentes/Header/Header';
 import Contacto from '../../componentes/Contacto/Contacto';
-import './Contacto.css';
+import './PageContacto.css';
 
 
 
