@@ -21,6 +21,7 @@ export default class Header extends Component<Props, State> {
                         <nav className="navegacion">
                             <Link to="/contact" className="navegacion__enalce">Contacto</Link>
                             <Link to="/nosotros" className="navegacion__enalce">Nossotros</Link>
+                            <Link to="/cursos" className="navegacion__enalce">Cursos</Link>
                             </nav>
                     </div>
 

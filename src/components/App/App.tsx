@@ -3,6 +3,7 @@ import React from 'react';
 import PageContacto from '../paginas/PageContacto/PageContacto'
 import Index from '../paginas/Index/Index'
 import PageNosotros from '../paginas/PageNosotros/PageNosotros';
+import PageCursos from '../paginas/PageCursos/PageCursos';
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={< Index />}></Route>
           <Route path='/contact' element={< PageContacto />}></Route>
           <Route path='/nosotros' element={< PageNosotros />}></Route>
+          <Route path='/Cursos' element={< PageCursos />}></Route>
         </Routes>
       </div>
     </Router>
