@@ -4,6 +4,7 @@ import PageContacto from '../paginas/PageContacto/PageContacto'
 import Index from '../paginas/Index/Index'
 import PageNosotros from '../paginas/PageNosotros/PageNosotros';
 import PageCursos from '../paginas/PageCursos/PageCursos';
+import PageEntrada from '../paginas/PageEntrada/PageEntrada';
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/contact' element={< PageContacto />}></Route>
           <Route path='/nosotros' element={< PageNosotros />}></Route>
           <Route path='/Cursos' element={< PageCursos />}></Route>
+          <Route path='/ListadoBlog' element={< PageEntrada />}></Route>
         </Routes>
       </div>
     </Router>
