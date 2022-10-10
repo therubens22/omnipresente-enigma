@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import Menu from '../Menu/Menu';
 import './Header.css';
 type Props = {}
 
@@ -18,11 +19,7 @@ export default class Header extends Component<Props, State> {
                             <h1 className="logo__nombre no-margin centrar-texto">Blog <span className="logo__bold">De Cafe batata papita</span></h1>
                         </Link>
 
-                        <nav className="navegacion">
-                            <Link to="/contact" className="navegacion__enalce">Contacto</Link>
-                            <Link to="/nosotros" className="navegacion__enalce">Nossotros</Link>
-                            <Link to="/cursos" className="navegacion__enalce">Cursos</Link>
-                            </nav>
+                      <Menu></Menu>
                     </div>
 
                 </div>

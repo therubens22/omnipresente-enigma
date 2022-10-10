@@ -17,8 +17,8 @@ function App() {
           <Route path='/' element={< Index />}></Route>
           <Route path='/contact' element={< PageContacto />}></Route>
           <Route path='/nosotros' element={< PageNosotros />}></Route>
-          <Route path='/Cursos' element={< PageCursos />}></Route>
-          <Route path='/ListadoBlog' element={< PageEntrada />}></Route>
+          <Route path='/cursos' element={< PageCursos />}></Route>
+          <Route path='/listado-blog' element={< PageEntrada />}></Route>
         </Routes>
       </div>
     </Router>
