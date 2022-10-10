@@ -17,7 +17,7 @@ export default class Footer extends Component<Props, State> {
                             <h1 className="logo__nombre no-margin centrar-texto">Blog <span className="logo__bold">De Cafe</span></h1>
                         </a>
 
-                        <Menu></Menu>
+                        <Menu mostrarTop={true}></Menu>
 
                     </div>
                 </div>
