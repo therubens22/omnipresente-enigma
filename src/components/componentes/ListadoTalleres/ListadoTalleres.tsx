@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import TalleresCursos from '../TalleresCursos/TalleresCursos';
 import './ListadoTalleres.css';
 type Props = {}
 
@@ -9,40 +10,33 @@ export default class ListadoTalleres extends Component<Props, State> {
 
   render() {
     return (
-        <aside className="sidebar">
-        <h3>Nuestros Cursos y Talleres</h3>
-        <ul className="cursos no-padding">
-            <li className="widget-curso">
-                <h4 className="no-margin"> Tecnica de extraccion de Cafe</h4>
-                <p className="widget-curso__label">Precio:
+            <main className="contenedor">
+                <h3 className="centrar-texto">Cursos y Talleres</h3>
+                    <TalleresCursos
+                    rutaImagen={'img/curso1.jpg'} 
+                    titulo={'Tecnica de Extraccion de Cafe'}                 
+                    precio={'20'} 
+                    cupos={'30'}
+                    descripcion={''}
+                    ></TalleresCursos>
 
-                    <span className="widget-curso__info">Gratis</span>
-                </p>
-                <p className="widget-curso__label">Cupos:
-                    
-                    <span className="widget-curso__info">20</span>
-                </p>
-                <a href="entrada.html" className="boton boton--secundario">Mas Informacion</a>
+                    <TalleresCursos
+                    rutaImagen={'img/curso2.jpg'} 
+                    titulo={'Taller para Tostar y Moler Granos'}                 
+                    precio={'10'} 
+                    cupos={'150'}
+                    descripcion={'Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque phdsahdjasdlasdhlasjhdlashdl'}
+                    ></TalleresCursos>
 
-            </li>
+                    <TalleresCursos
+                    rutaImagen={'img/curso3.jpg'} 
+                    titulo={'4 Recetas de Cafe para Principiantes'}                 
+                    precio={'50'} 
+                    cupos={'20'}
+                    descripcion={'Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque phdsahdjasdlasdhlasjhdlashdl'}
+                    ></TalleresCursos>
 
-            <li className="widget-curso">
-                <h4 className="no-margin">4 Recetas de Cafe para Principiantes</h4>
-                <p className="widget-curso__label">Precio:
-
-                    <span className="widget-curso__info">Gratis</span>
-                </p>
-                <p className="widget-curso__label">Cupos:
-                    
-                    <span className="widget-curso__info">20</span>
-                </p>
-                <a href="entrada.html" className="boton boton--secundario">Mas Informacion</a>
-
-            </li>
-
-        </ul>
-
-    </aside>
+            </main>
     )
   }
 }
