@@ -1,3 +1,4 @@
+import { type } from '@testing-library/user-event/dist/type';
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import './TalleresCursos.css';
@@ -7,7 +8,9 @@ type Props = {
     precio: string
     cupos: string
     descripcion: string
+    mostrarImg?: boolean
 }
+
 
 type State = {}
 
@@ -27,6 +30,9 @@ export default class TalleresCursos extends Component<Props, State> {
 
                      <div className="curso__imagen">                        
                         <img loading="lazy" src={this.props.rutaImagen} alt="curso.jpg" />
+                        
+                        {this.props.mostrarImg  === true && <img loading="lazy" src={this.props.rutaImagen} alt="curso.jpg" />}                  
+                        
                      </div>
 
                     <div className="curso__informacion">

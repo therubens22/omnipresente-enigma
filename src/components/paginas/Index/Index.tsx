@@ -19,7 +19,8 @@ function Index() {
         </div>
 
         <div className='derecha'>
-          <ListadoTalleres></ListadoTalleres>
+          <ListadoTalleres ></ListadoTalleres>
+
         </div>
       
       </div>

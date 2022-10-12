@@ -16,7 +16,7 @@ export default class Header extends Component<Props, State> {
                     <div className="barra">
 
                         <Link to="/" className="logo">
-                            <h1 className="logo__nombre no-margin centrar-texto">Blog <span className="logo__bold">De Cafe batata papita</span></h1>
+                            <h1 className="logo__nombre no-margin centrar-texto">Blog <span className="logo__bold">De Cafe</span></h1>
                         </Link>
 
                       <Menu></Menu>
