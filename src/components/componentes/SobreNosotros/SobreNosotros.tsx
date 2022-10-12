@@ -14,7 +14,7 @@ export default class SobreNosotros extends Component<Props, State> {
 
         <div className="sobre-nosotros">
             <div className="sobre-nosotros__img">
-                <img src="./SobreNotros/Img/nosotros.jpg" alt="aca esta la img" />
+                <img src={require('./img/nosotros.jpg')} alt="aca esta la img" />
 
             </div>
 

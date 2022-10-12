@@ -13,7 +13,7 @@ export default class ListadoTalleres extends Component<Props, State> {
             <main className="contenedor">
                 <h3 className="centrar-texto">Cursos y Talleres</h3>
                     <TalleresCursos
-                    rutaImagen={'../componentes/TalleresCurso/Img/cursos1.jpg'} 
+                    rutaImagen={require('./img/curso1.jpg')} 
                     titulo={'Tecnica de Extraccion de Cafe'}                 
                     precio={'20'} 
                     cupos={'30'}
@@ -21,7 +21,7 @@ export default class ListadoTalleres extends Component<Props, State> {
                     ></TalleresCursos>
 
                     <TalleresCursos
-                    rutaImagen={'img/curso2.jpg'} 
+                    rutaImagen={require('./img/curso2.jpg')}
                     titulo={'Taller para Tostar y Moler Granos'}                 
                     precio={'10'} 
                     cupos={'150'}
@@ -29,7 +29,7 @@ export default class ListadoTalleres extends Component<Props, State> {
                     ></TalleresCursos>
 
                     <TalleresCursos
-                    rutaImagen={'img/curso3.jpg'} 
+                    rutaImagen={require('./img/curso3.jpg')}
                     titulo={'4 Recetas de Cafe para Principiantes'}                 
                     precio={'50'} 
                     cupos={'20'}
