@@ -1,12 +1,38 @@
 import React, { Component } from 'react'
 import ArticuloDeBlog from '../ArticuloDeBlog/ArticuloDeBlog';
 import './ListadoBlog.css';
-type Props = {}
+import fafaf from "../ListadoBlog/img/blog1.jpg";
 
+type Props = {}
 type State = {}
 
 export default class ListadoBlog extends Component<Props, State> {
     state = {}
+
+    articulos = [
+        {
+            rutaImagen: fafaf,
+            titulo: "1",
+            descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
+        },
+        {
+            rutaImagen: "img/blog2.jpg",
+            titulo: "2",
+            descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
+        },
+        {
+            rutaImagen: "img/blog1.jpg",
+            titulo: "asass",
+            descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
+        },
+        {
+            rutaImagen: "img/blog1.jpg",
+            titulo: "asass",
+            descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
+        }
+    ];
+
+
 
     render() {
         return (
@@ -14,25 +40,15 @@ export default class ListadoBlog extends Component<Props, State> {
             <main className='Blog'>
                 <h3>Nuestro Blog</h3>
 
-                <ArticuloDeBlog
-                    rutaImagen={'img/blog1.jpg'}
-                    titulo={'Tipos de Grano de Cafe'}
-                    descripcion={'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'}
-                ></ArticuloDeBlog>
 
+                {this.articulos.map(art =>
+                    <ArticuloDeBlog
+                        rutaImagen={art.rutaImagen}
+                        titulo={art.titulo}
+                        descripcion={art.descripcion}
+                    ></ArticuloDeBlog>
+                )}
 
-                <ArticuloDeBlog
-                    rutaImagen={'img/blog1.jpg'}
-                    titulo={'saracatunga siglo 22'}
-                    descripcion={'desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc '}
-                ></ArticuloDeBlog>
-
-
-                <ArticuloDeBlog
-                    rutaImagen={'img/blog1.jpg'}
-                    titulo={'Pipiolo'}
-                    descripcion={'desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc desc '}
-                ></ArticuloDeBlog>
 
 
             </main>

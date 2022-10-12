@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import './ArticuloDeBlog.css';
+
 type Props = {
     rutaImagen: string
     titulo: string
@@ -18,18 +19,18 @@ export default class ArticuloDeBlog extends Component<Props, State> {
     }
 
     render() {
+        const props = this.props;
+
         return (
             <article className='Entrada'>
                 <div className="entrada__imagen">
-                    <picture>
-
-                        <img loading="lazy" src={this.props.rutaImagen} alt="imagen blog"></img>
-                    </picture>
-
+                    {props.rutaImagen}
+                    <img src={props.rutaImagen} alt="imagen blog"></img>
                 </div>
+
                 <div className="entrada__contenido">
-                    <h4 className="no-margin">{this.props.titulo}</h4>
-                    <p>{this.props.descripcion}</p>
+                    <h4 className="no-margin">{props.titulo}</h4>
+                    <p>{props.descripcion}</p>
                     <a href="entrada.html" className="boton boton--primario">Leer mas</a>
                 </div>
             </article>
