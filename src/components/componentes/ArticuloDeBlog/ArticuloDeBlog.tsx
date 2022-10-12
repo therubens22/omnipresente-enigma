@@ -24,7 +24,6 @@ export default class ArticuloDeBlog extends Component<Props, State> {
         return (
             <article className='Entrada'>
                 <div className="entrada__imagen">
-                    {props.rutaImagen}
                     <img src={props.rutaImagen} alt="imagen blog"></img>
                 </div>
 

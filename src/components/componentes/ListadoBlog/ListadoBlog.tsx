@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ArticuloDeBlog from '../ArticuloDeBlog/ArticuloDeBlog';
 import './ListadoBlog.css';
-import fafaf from "../ListadoBlog/img/blog1.jpg";
 
 type Props = {}
 type State = {}
@@ -11,22 +10,17 @@ export default class ListadoBlog extends Component<Props, State> {
 
     articulos = [
         {
-            rutaImagen: fafaf,
+            rutaImagen: require("./img/blog1.jpg"),
             titulo: "1",
             descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
         },
         {
-            rutaImagen: "img/blog2.jpg",
+            rutaImagen: require("./img/blog2.jpg"),
             titulo: "2",
             descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
         },
         {
-            rutaImagen: "img/blog1.jpg",
-            titulo: "asass",
-            descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
-        },
-        {
-            rutaImagen: "img/blog1.jpg",
+            rutaImagen: require("./img/blog3.jpg"),
             titulo: "asass",
             descripcion: "lalalalalala lalalalalala lalalalalala lalalalalala lalalalalala "
         }
