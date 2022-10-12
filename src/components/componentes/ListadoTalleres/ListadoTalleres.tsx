@@ -13,7 +13,7 @@ export default class ListadoTalleres extends Component<Props, State> {
             <main className="contenedor">
                 <h3 className="centrar-texto">Cursos y Talleres</h3>
                     <TalleresCursos
-                    rutaImagen={'img/curso1.jpg'} 
+                    rutaImagen={'../componentes/TalleresCurso/Img/cursos1.jpg'} 
                     titulo={'Tecnica de Extraccion de Cafe'}                 
                     precio={'20'} 
                     cupos={'30'}
