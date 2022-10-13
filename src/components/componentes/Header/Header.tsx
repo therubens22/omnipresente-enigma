@@ -9,6 +9,17 @@ type State = {}
 export default class Header extends Component<Props, State> {
     state = {}
 
+    laInformacionDeItemsDeMenuQueRecibimosDeFuera = [
+        {
+            url: "/contact",
+            etiqueta: "Contacto"
+        },
+        {
+            url: "/paraca",
+            etiqueta: "Bolaso"
+        },
+    ];
+
     render() {
         return (
             <header className="header">
@@ -19,7 +30,7 @@ export default class Header extends Component<Props, State> {
                             <h1 className="logo__nombre no-margin centrar-texto">Blog <span className="logo__bold">De Cafe</span></h1>
                         </Link>
 
-                      <Menu></Menu>
+                      <Menu items={this.laInformacionDeItemsDeMenuQueRecibimosDeFuera}></Menu>
                     </div>
 
                 </div>

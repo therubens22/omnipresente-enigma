@@ -8,6 +8,33 @@ type State = {}
 export default class Footer extends Component<Props, State> {
     state = {}
 
+    laInformacionDeItemsDeMenuQueRecibimosDeFuera = [
+        {
+            url: "/contact",
+            etiqueta: "Contacto"
+        },
+        {
+            url: "/nosotros",
+            etiqueta: "Nosotros"
+        },
+        {
+            url: "/paraya",
+            etiqueta: "Ve vo"
+        },
+        {
+            url: "/cursos",
+            etiqueta: "Cursos"
+        },
+        {
+            url: "/",
+            etiqueta: "Quienes somos"
+        },
+        {
+            url: "/paraca",
+            etiqueta: "Bolaso"
+        },
+    ];
+
     render() {
         return (
             <footer className="footer">
@@ -17,7 +44,10 @@ export default class Footer extends Component<Props, State> {
                             <h1 className="logo__nombre no-margin centrar-texto">Blog <span className="logo__bold">De Cafe</span></h1>
                         </a>
 
-                        <Menu mostrarTop={true}></Menu>
+                        <Menu
+                        items={this.laInformacionDeItemsDeMenuQueRecibimosDeFuera} 
+                        mostrarTop={true}
+                        ></Menu>
 
                     </div>
                 </div>
