@@ -26,12 +26,11 @@ export default class TalleresCursos extends Component<Props, State> {
         return (
             <div className="curso">
 
-                <div className="curso__imagen">
-                    <img loading="lazy" src={this.props.rutaImagen} alt="curso.jpg" />
-
-                    {this.props.mostrarImg === true && <img loading="lazy" src={this.props.rutaImagen} alt="curso.jpg" />}
-
-                </div>
+                {this.props.rutaImagen !== "" &&
+                    <div className="curso__imagen">
+                        <img src={this.props.rutaImagen} alt="curso.jpg" />
+                    </div>
+                }
 
                 <div className="curso__informacion">
 
