@@ -3,6 +3,7 @@ import Footer from '../../componentes/Footer/Footer';
 import Header from '../../componentes/Header/Header';
 import ListadoBlog from '../../componentes/ListadoBlog/ListadoBlog';
 import ListadoTalleres from '../../componentes/ListadoTalleres/ListadoTalleres';
+import ValoracionDelMes from '../../componentes/ValoracionDelMes/ValoracionDelMes';
 import './Index.css';
 
 
@@ -23,7 +24,9 @@ function Index() {
         </div>
       
       </div>
-
+        <div className='abajo'>
+          <ValoracionDelMes></ValoracionDelMes>
+        </div>
       <Footer></Footer>
     </div>
   );

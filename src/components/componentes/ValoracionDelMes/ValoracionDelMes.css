@@ -1,0 +1,9 @@
+.titulo {
+  background-color: #0000FF;
+  
+  font-size: 40px;
+  width: max-content;
+  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 3rem;
+  margin-top: 4rem;
+}
