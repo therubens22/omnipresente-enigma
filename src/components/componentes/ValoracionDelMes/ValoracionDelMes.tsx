@@ -13,52 +13,52 @@ export default class ValoracionDelMes extends Component<Props, State> {
         {
             Curso: "Tecnica de Extraccion de Cafe Premium",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe1",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe2",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe3",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe4",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe5",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe6",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe7",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe8",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:4
         },
         {
             Curso: "Tecnica de Extraccion de Cafe9",
             NombreUsuario: "CapyMarce",
-            Valor:"Nulla tristique faucibus facilisis. Vestibulum vestibulum libero a neque porta vulputate. Etiam pharetra dolor eu nibh vestibulum ornare. Donec tempus ullamcorper aliquet. Curabitur et risus ipsum. "
+            Valor:1
         },
     ];
 
@@ -67,11 +67,11 @@ export default class ValoracionDelMes extends Component<Props, State> {
             <main className='Valoracion'>
                  <h3 className='titulo'>Valoraciones del Mes</h3>
 
-                   {this.InformacionExtra.map(art =>
+                   {this.InformacionExtra.map(infoValoracion =>
                     <Valoraciones
-                        Curso={art.Curso}
-                        NombreUsuario={art.NombreUsuario}
-                        Valor={art.Valor}
+                        Curso={infoValoracion.Curso}
+                        NombreUsuario={infoValoracion.NombreUsuario}
+                        Valor={infoValoracion.Valor}
                     ></Valoraciones>
                 )}
 
